@@ -3,7 +3,7 @@
 int main()
 {
 int a,b,i,j;
-printf("Podaj a i b \n");
+printf("Podaj szerokosc i wysokosc prostokata \n");
 scanf("%d %d", &a, &b);
 
 for(i=0; i<a; i++)
