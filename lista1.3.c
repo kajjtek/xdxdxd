@@ -3,8 +3,9 @@
 int main()
 {
 int a,b,i,j;
-printf("Podaj szerokosc i wysokosc prostokata \n");
-scanf("%d %d", &a, &b);
+printf("Podaj a \n");
+scanf("%d", &a);
+b = 2 * a;
 
 for(i=0; i<a; i++)
 	{
