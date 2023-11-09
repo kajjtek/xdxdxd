@@ -12,7 +12,7 @@ scanf("%d %d %d", &dzien, &mies, &rok);
 
 if(rok>0)
 	{
-	for(i=1;i<=rok;i++)
+	for(i=1;i<rok;i++)
 		{
 		if((rok%4==0 && rok%100!=0) || (rok%400==0))
 		{
