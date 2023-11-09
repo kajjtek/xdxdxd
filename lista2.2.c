@@ -2,14 +2,13 @@
 
 int main()
 {
-float x=1;
+int x=0;
 float suma = 0;
 int n;
 while(suma<=10)
 	{
-		suma += (1/x);
 		x++;
+		suma += (1/x);
 	}
-n =  x-1;
-printf("jest prawdziwa dla n = %d \n", n);
+printf("jest prawdziwa dla n = %d \n", x);
 }
