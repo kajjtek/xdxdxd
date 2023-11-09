@@ -1,7 +1,7 @@
 #include <stdio.h> 
 int main()
 {
-double czas = 0;
+int i;
 int intczas = 0;
 int dzien = 0;
 int rok= 0;
@@ -12,8 +12,17 @@ scanf("%d %d %d", &dzien, &mies, &rok);
 
 if(rok>0)
 	{
-	czas = (rok-1) *365.25;
-	intczas = czas;
+	for(i=1;i<=rok;i++)
+		{
+		if((rok%4==0 && rok%100!=0) || (rok%400==0))
+		{
+			intczas += 366
+		}
+		else
+		{
+			intczas += 365
+		}
+		}
 	}
 	else
 	{
