@@ -16,11 +16,11 @@ if(rok>0)
 		{
 		if((rok%4==0 && rok%100!=0) || (rok%400==0))
 		{
-			intczas += 366
+			intczas += 366;
 		}
 		else
 		{
-			intczas += 365
+			intczas += 365;
 		}
 		}
 	}
