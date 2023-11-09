@@ -4,7 +4,6 @@ int main()
 int i, j, roznica, intczas1, intczas2;
 for(i=0;i<=1;i++)
 {
-double czas = 0;
 int intczas = 0;
 int dzien = 0;
 int rok= 0;
@@ -21,8 +20,17 @@ if(i==0)
 	}
 if(rok>=0)
 	{
-	czas = (rok-1) *365.25;
-	intczas = czas;
+	for(j=1; j<=rok;j++)
+		{
+			if((rok%4==0 && rok%100!=0) || rok%400==0)
+			{
+				intczas += 366;
+			}
+			else
+			{
+				intczas += 365;
+			}
+		}
 	}
 	else
 	{
@@ -30,7 +38,7 @@ if(rok>=0)
 	return 0;
 	}
 
-if(rok%4==0)
+if((rok%4==0 && rok%100!=0) || rok%400==0)
 	{
 	switch(mies)
 		{
