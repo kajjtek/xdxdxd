@@ -2,17 +2,14 @@
 
 int main()
 {
-float i;
+float x=1;
 float suma = 0;
 int n;
-for(i=1; i<100000; i++)
+while(suma<=10)
 	{
-	suma = suma + (1/i);
-	if(suma>10)
-		{
-		n = i;
-		printf("Nierownosc jest prawdziwa dla n = %d \n", n);
-		break;
-		}
+		suma += (1/x);
+		x++;
 	}
+n =  x-1;
+printf("jest prawdziwa dla n = %d \n", n);
 }
