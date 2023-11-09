@@ -20,7 +20,7 @@ if(i==0)
 	}
 if(rok>=0)
 	{
-	for(j=1; j<=rok;j++)
+	for(j=1; j<rok;j++)
 		{
 			if((rok%4==0 && rok%100!=0) || rok%400==0)
 			{
